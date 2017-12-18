@@ -1,0 +1,125 @@
+.table_container{  background: #f0f0f0;
+  border: 1px solid #dbdbde;
+  margin-top: 32px;
+  clear: both;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    
+  }
+  .table_title{
+    -webkit-border-top-right-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-bottom: 1px solid #cdcdcd;
+  }
+  
+  .table_container .table_title .titleIcon {
+  float: left;
+  padding: 11px 11px;
+  border-right: 1px solid #D5D5D5;
+  
+}
+
+.table_container .table_title h6 {
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 9px 12px 8px 12px;
+}
+
+.table_container .table_title:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*Part2--table_data & Search */
+.table_data{  position: relative;}
+.table_data_filter {
+  text-align: left;
+  margin: 14px 8px 14px 12px;
+  float: left;
+  color: #878787;
+  font-size: 11px;
+}
+ .table_data_filter label{
+display: inline-block;
+  position: relative;
+ }
+ 
+ 
+  .table_data_filter label > span {
+  display: block;
+  float: left;
+  margin-top: 3px;
+  margin-right: 10px;
+}
+
+
+.table_data_filter .srch {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  background: url(../icons/search_icon.png) no-repeat 0 0;
+  border: none;
+  width: 9px;
+  height: 9px;
+}
+/**********************/
+
+.content_table{
+    margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #d5d5d5;
+}
+thead {
+  display: table-header-group;
+}
+
+.content_table  thead tr {
+  border-bottom-color: #d5d5d5;
+  border-bottom: 1px solid #e7e7e7;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  
+}
+
+
+.content_table  thead  th {
+      background:linear-gradient(to bottom, #FAF9F9 0%,#FFFFFF 100%);
+  padding: 4px 0px 3px 10px;
+  cursor: pointer;
+  font-size: 11px;
+  border-left:none;
+  color:#1E1E1E;
+border-right:1px solid #e7e7e7;
+}
+
+#last_cell{border-right:none;}
+.content_table thead th div.Data_sort {
+  position: relative;
+  padding-right: 20px;
+  color: #1E1E1E;
+}
+
+/*tbody*/
+#table_records{ 
+ display:table-header-group;   
+}
+
+#table_records .row_odd{
+ background-color: #f0f0f0;    border-bottom: 1px solid #e7e7e7; 
+}
+
+#table_records .row_even{
+    background-color: #fff;    border-bottom: 1px solid #e7e7e7; 
+}
+tr.row_odd td.inp_data,tr.row_even td.inp_data{
+  padding: 8px 10px;
+border-right: 1px solid #e7e7e7;
+border-left: none;
+}
+tr.row_odd td.cen,tr.row_even td.cen{
+    text-align:center;
+}
